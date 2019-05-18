@@ -38,7 +38,7 @@ coursera_on_demand <- function(){
     
     payload <- sprintf('{  
       "assignmentKey": "oZGCGg4whDDkeWmY",
-      "submitterEmail": %nishigogia09@gmail.com,  
+      "submitterEmail": nishigogia09@gmail.com,  
       "secret": %s,  
       "parts": {  
         "5bf7v": {  
