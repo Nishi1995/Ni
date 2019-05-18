@@ -1,5 +1,4 @@
 # Ni
- # So swirl does not repeat execution of commands
 # AUTO_DETECT_NEWVAR <- FALSE
 
 # Returns TRUE if the user has calculated a value equal to that calculated by the given expression.
@@ -34,19 +33,19 @@ getExpr <- function(){
 coursera_on_demand <- function(){
   selection <- getState()$val
   if(selection == "Yes"){
-    email <- readline("What is your email address? ")
-    token <- readline("What is your assignment token? ")
+    email <- readline("nishigogia09@gmail.com ")
+    token <- readline("oZGCGg4whDDkeWmY")
     
     payload <- sprintf('{  
-      "assignmentKey": "mXC9v68TEeW3mhLW1_Ertw",
-      "submitterEmail": %s,  
+      "assignmentKey": "oZGCGg4whDDkeWmY",
+      "submitterEmail": %nishigogia09@gmail.com,  
       "secret": %s,  
       "parts": {  
         "5bf7v": {  
           "output": "correct"  
         }  
       }  
-    }', nishigogia09@gmail.com, oZGCGg4whDDkeWmY)
+    }', nishigogia09@gmail.com,oZGCGg4whDDkeWmY)
     url <- 'https://www.coursera.org/api/onDemandProgrammingScriptSubmissions.v1'
   
     httr::POST(url, body = payload)
