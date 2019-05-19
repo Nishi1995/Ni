@@ -27,3 +27,4 @@ makeVector <- function(x = numeric()) {
 +     m
 + }
 > 
+
